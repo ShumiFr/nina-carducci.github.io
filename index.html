@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
@@ -13,9 +13,24 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 
+	<!-- Twitter meta tags -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Nina Carducci, photographe professionnelle à Bordeaux">
+	<meta name="twitter:description" content="Nina Carducci, photographe professionnelle à Bordeaux, vous propose de saisir ces merveilleux moments d'une vie au travers de son regard, son approche, sa technique.">
+	<meta name="twitter:image" content="https://github.com/ShumiFr/nina-carducci.github.io/blob/dev/assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp">
+	<meta name="twitter:image:alt" content="Plan large de jeunes gens s'amusant à un concert.">
+
+	<!-- Open Graph (FB) meta tags -->
+	<meta property="og:title" content="Nina Carducci, photographe professionnelle à bordeaux">
+	<meta property="og:site_name" content="Nina Carducci, photographe professionnelle à Bordeaux">
+	<meta property="og:type" content="article">
+	<meta property="og:description" content="Nina Carducci, photographe professionnelle à Bordeaux, vous propose de saisir ces merveilleux moments d'une vie au travers de son regard, son approche, sa technique.">
+	<meta property="og:image" content="https://github.com/ShumiFr/nina-carducci.github.io/blob/dev/assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp">
+	<meta property="og:url" content="https://nina-carducci.github.io/">
+	
 	<title>Nina Carducci, photographe professionnelle à Bordeaux</title>
 	<meta name="description" content="Nina Carducci, photographe professionnelle à Bordeaux, vous propose de saisir ces merveilleux moments d'une vie au travers de son regard et sa technique.">
-	<link rel="canonical" href="https://nina-carducci-photographe.netlify.app/">
+	<link rel="canonical" href="https://nina-carducci.github.io/">
 </head>
 <body>
 	<header class="top-header">
@@ -60,7 +75,7 @@
 	</section>
 	<section id="about">
 		<div class="picture left">
-			<img src="./assets/images/nina.webp" alt="Portrait de Nina Carducci, de face, avec un léger sourire, qvec une forêt en arrière-plan.">
+			<img src="./assets/images/nina.webp" alt="Portrait de Nina Carducci, de face, avec un léger sourire, avec une forêt en arrière-plan.">
 		</div>
 		<div id="about-me">
 			<h2 class="about-me__title">A propos de moi</h2>
@@ -70,7 +85,7 @@
 		</div>
 	</section>
 	<section id="gallery">
-		<h3 class="title">Portfolio</h3>
+		<h2 class="title">Portfolio</h2>
 		<div class="container py-3">
 			<div class="gallery" style="display: none">
 				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt="Salle de concert baignée de lumières chaudes."/>
@@ -87,7 +102,7 @@
 		<div class="quote">
 			<figure>
 				<blockquote>
-					<h1 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</h1>
+					<h2 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</h2>
 				</blockquote>
 				<figcaption class="quote__author">- Richard Avedon</figcaption>
 			</figure>
@@ -131,7 +146,7 @@
 	<section class="quote">
 		<figure>
 			<blockquote>
-				<h1 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h1>
+				<h2 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h2>
 			</blockquote>
 			<figcaption class="quote__author">- Richard Avedon</figcaption>
 		</figure>
@@ -139,7 +154,7 @@
 	<section id="contact">
 		<div class="container">
 			<div class="form-container">
-				<h3>Une question ? Une demande de devis ?</h3>
+				<h2>Une question ? Une demande de devis ?</h2>
 				<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 				<form method="post">
 					<label for="nom">Nom</label>
@@ -162,5 +177,32 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script src="./assets/maugallery.js"></script>
 	<script src="./assets/scripts.js"></script>
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": ["LocalBusiness", "Service"],
+			"name": "Nina Carducci",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "68 avenue Alsace-Lorraine",
+				"addressLocality": "Bordeaux",
+				"postalCode": "33200",
+				"addressCountry": "FR"
+			},
+			"telephone": "0556677889",
+			"openingHoursSpecification": {
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": [
+					"lundi",
+					"mardi",
+					"mercredi",
+					"jeudi",
+					"vendredi"
+				],
+				"opens": "10:00",
+				"closes": "19:00"
+			}
+		}
+	</script>
 </body>
 </html>
