@@ -136,7 +136,7 @@ html {
 }
 
 .nav-pills .nav-link {
-	color: #000
+	color: #000 !important
 }
 
 .nav-item:hover {
